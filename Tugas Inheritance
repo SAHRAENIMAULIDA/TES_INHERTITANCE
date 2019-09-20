@@ -1,0 +1,36 @@
+class Bunga(object):
+  def __init__(self, a, m, k):
+    self.anggrek = a
+    self.mawar = m
+    self.kembangsepatu = k
+  def jumlahBunga(self):
+     return self.anggrek + self.mawar + self.kembangsepatu
+  def cetakData(Self):
+     print("Anggrek \t: ",self.anggrek)
+     print("Mawar \t: ",self.mawar)
+     print("Kembangsepatu\t :",self.kembangsepatu)
+     
+  def cetakJB(self):
+     print("Jumlah daro semua bunga diatas \t= ",self.jumlahBunga())
+     
+class WarnaBunga(Bunga):
+  def __init__(self, a, m, k, w):
+     self.anggrek = a
+     self.mawar = m
+     self.kembangsepatu = k
+     self.warna = w
+     
+  def cetakData(self):
+      print("Anggrek \t :", self.anggrek)
+      print("Mawar\t :", self.mawar)
+      print("kembangsepatu\t :", self.kembangsepatu)
+      print("warna dari semua bunga diatas \t:", self.warna)
+      
+def main():
+      wb1 = WarnaBunga (1, 2, 3, "merah")
+      wb1.cetakData()
+      wb1.cetakJB()
+      
+if __name__ == "__main__":
+    main()
+     
